@@ -130,8 +130,54 @@
         .experience-item h4{
             color: #3a4170;
             background-color: #e8ebf3;
-           
+        }
+        @media (max-width: 768px) {
+            .resume-container {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
 
+            .profile img {
+                width: 150px;
+                height: 150px;
+            }
+
+            h2, .profile h1 {
+                font-size: 1.5em;
+            }
+
+            .experience-item h3, .experience-item h4 {
+                font-size: 1.1em;
+            }
+
+            .resume {
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .resume-container {
+                padding: 15px;
+            }
+
+            .profile img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .experience-item p {
+                font-size: 0.8em;
+            }
+
+            .resume {
+                font-size: 24px;
+                text-align: center;
+            }
         }
     </style>
 </head>
