@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Resume</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .resume-container {
+            max-width: 900px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+        }
+
+        /* Left Section */
+        .profile, .skills, .contact-info {
+            background-color: #f0f4fc;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .profile img {
+            width: 200px;
+            height: 350px;
+            border-radius: 50%;
+            border: 3px solid #333;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+
+        .profile h1 {
+            font-size: 2.em;
+            color: #333;
+        }
+
+        .profile p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list, .contact-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .skills-list li, .contact-list li {
+            font-size: 0.9em;
+            color: #555;
+            padding: 5px 0;
+        }
+
+        /* Right Section */
+        .experience {
+            padding: 20px;
+            background-color: #ffffff;
+            border-left: 3px solid #4a90e2;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h3 {
+            font-size: 1.2em;
+            color: #4a90e2;
+        }
+
+        .experience-item h4 {
+            font-size: 1em;
+            color: #777;
+            margin-bottom: 5px;
+        }
+
+        .experience-item p {
+            font-size: 0.9em;
+            line-height: 1.5;
+            color: #555;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .experience-item p::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #4a90e2;
+            font-size: 1.2em;
+        }
+        .cpe {
+            
+            font-size: 15px;
+        }
+        .resume{
+            font-size: 40px;
+        }
+        .experience-item h4{
+            color: #3a4170;
+            background-color: #e8ebf3;
+           
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+    <!-- Left Section -->
+    <div>
+        <div class="profile">
+            <img src="pphoto.jpg" alt="Profile Picture">
+            <h1>Panupong Boonmee</h1>
+            <p>Web Developer</p>
+            <p>Specialized in Frontend Development</p>
+        </div>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>React.js, Node.js</li>
+                <li>Responsive Design</li>
+                <li>Git, Agile</li>
+            </ul>
+        </section>
+
+        <section class="contact-info">
+            <h2>Contact</h2>
+            <ul class="contact-list">
+                <li>Email: peedragon@windowslive.com</li>
+                <li>Phone: (+66) 96-963-1313</li>             
+                <li>Line : pee_dn </li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Right Section -->
+    <div>
+        <section class="experience">
+            <h2 class="resume">Resume</h2>
+
+            <div class="experience-item">
+                <h3>Profile</h3>
+                <h4></h4>
+                <p>Computer Engineering graduate specializing in Intelligent Systems with hands-on 
+                    experience in Java application development, HTML, CSS, Python, and MySQL databases. 
+                    During on-the-job training, gained practical experience as a Software Support Specialist 
+                    in a professional IT organization. Known for strong analytical abilities, self-motivation, 
+                    and a proven track record in resolving technical issues. Thrives in both independent and 
+                    team environments and committed to continuous learning and improvement.</p>
+            </div>
+<hr>
+<br>
+            <div class="experience-item">
+                <h3>Education</h3><br>
+                <h4>SIIT , Thammasat | 2017 - 2021</h4>
+                <h5>Major in <span class="cpe">Computer Engineering (Intelligent Systems)</span></h5>
+                <br>
+               
+                <h4>Agrupamento de Escolas Domingos Sequeira | 2015 - 2016</h4>
+                <h5><span class="cpe">Computer and Technology Program</span></h5>
+                <p>Exchanged from Portugal with AFS Intercultural Programs for 10 months.
+                    <br>
+                 
+                <br>
+                <h4>Assumption College , Bangkok | 2005 - 2017</h4>       
+            </div>
+<hr>
+<br>
+<div class="experience-item">
+    <h3>Intern</h3><br>
+    <p>During my internship, I took on multiple roles and responsibilities, which provided me with hands-on 
+        technical experience. Initially, I installed CCTV cameras, set up wiring, and developed a facial 
+        recognition program integrated with sensors for face and temperature detection. I then enhanced the 
+        system to collect sensor and camera data automatically, storing it efficiently in datasheets. Additionally, 
+        I assisted in a project that utilized AI and camera systems to capture and identify license plates and vehicle types.</p>
+</div>
+<hr>
+<br>
+<div class="experience-item">
+    <h3>Bachelor's Project</h3><br>
+    <p>During college, I developed a website that enables users to select an area from Google Maps and determines the price of 
+        that area. My responsibilities included overseeing the front-end development, designing the UI using Figma and Photoshop, 
+        and implementing the design with React.</p>
+</div>
+<hr>
+<br>
+<div class="experience-item">
+    <h3>Work History</h3><br>
+    <h4>Liu Channel </h4>
+    <h5>Video Editor</h5>
+    <p> </p>
+    <br>
+   
+    <h4>Agrupamento de Escolas Domingos Sequeira | 2015 - 2016</h4>
+    <h5><span class="cpe">Computer and Technology Program</span></h5>
+    <p>Exchanged from Portugal with AFS Intercultural Programs for 10months.
+        <br>
+     
+    <br>
+    <h4>Assumption College , Bangkok | 2005 - 2017</h4>       
+</div>
+        </section>
+    </div>
+</div>
+
+</body>
+</html>
