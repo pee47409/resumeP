@@ -147,30 +147,21 @@
                 text-align: center;
             }
         }
+/* For landscape mode */
+@media (max-width: 1024px) and (orientation: landscape) {
+    .resume-container {
+        grid-template-columns: 1fr 2fr; /* Two columns layout on larger screens */
+    }
 
-        @media (max-width: 480px) {
-            body {
-                padding: 10px;
-            }
+    .profile img {
+        width: 200px;
+        height: 200px;
+    }
 
-            .resume-container {
-                padding: 15px;
-            }
-
-            .profile img {
-                width: 120px;
-                height: 120px;
-            }
-
-            .experience-item p {
-                font-size: 0.8em;
-            }
-
-            .resume {
-                font-size: 24px;
-                text-align: center;
-            }
-        }
+    .resume {
+        font-size: 36px;
+    }
+}
     </style>
 </head>
 <body>
