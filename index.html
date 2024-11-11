@@ -131,6 +131,32 @@
             color: #3a4170;
             background-color: #e8ebf3;
         }
+        .nav-buttons {
+            position: fixed;
+            top: 20px;
+          
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-button {
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 15px;
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-button:hover {
+            background-color: #357ab8;
+            transform: scale(1.05);
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
         @media (max-width: 768px) {
             .resume-container {
                 grid-template-columns: 1fr; /* One column layout on small screens */
@@ -146,25 +172,65 @@
                 font-size: 30px;
                 text-align: center;
             }
+            .nav-buttons {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
         }
 /* For landscape mode */
-@media (max-width: 1024px) and (orientation: landscape) {
-    .resume-container {
+        @media (max-width: 1024px) and (orientation: landscape) {
+        .resume-container {
         grid-template-columns: 1fr 2fr; /* Two columns layout on larger screens */
-    }
+       
+        }
 
-    .profile img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .resume {
-        font-size: 36px;
-    }
-}
+        .profile img {
+            width: 200px;
+            height: 200px;   
+            object-fit: cover; 
+            object-position: center; /* ตั้งตำแหน่งให้ภาพถูกครอบจากกลาง */
+        }
+        
+        .experience-item p {
+                    font-size: 0.8em;
+                }
+        .resume-container {
+                    padding: 15px;
+                }
+        .resume {
+            font-size: 36px;
+            text-align: center;
+        }
+        body {
+                    padding: 10px;
+                }
+         .nav-buttons {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+       
+        }
     </style>
 </head>
 <body>
+    <div class="nav-buttons">
+    
+        <button class="nav-button" onclick="goToPortfolio()">Go To Portfolio</button>
+    </div>
+    <script>
+    
+    
+        function goToPortfolio() {
+        // Redirect to portfolio page
+        window.location.href = "portfolio.html"; // Change this to the correct path of your portfolio page
+    }
+    </script>
 
 <div class="resume-container">
     <!-- Left Section -->
@@ -251,16 +317,35 @@
     <h3>Work History</h3><br>
     <h4>Liu Channel </h4>
     <h5>Video Editor</h5>
-    <p> </p>
+    <p>Responsible for all editing work within the company, managing the posting of videos for 
+        both company pages, each achieving over 10 million views per video.</p>
+        <br>
+    <h5>Additional responsibilities</h5>
+    <p>Actor.</p>
+    <p>Assists writers in brainstorming modern content and scripts.</p>
+    <p>Provides assistance to the camera crew with angles, lighting, and shooting locations.</p>
+    <p>Sources and prepares essential props and equipment required for filming.</p>
     <br>
    
-    <h4>Agrupamento de Escolas Domingos Sequeira | 2015 - 2016</h4>
-    <h5><span class="cpe">Computer and Technology Program</span></h5>
-    <p>Exchanged from Portugal with AFS Intercultural Programs for 10months.
+    <h4>Spriteder SPD No.1</h4>
+    <h5><span class="cpe">Creative + Cameraman + Video Editor</span></h5>
+    <p>	Primarily responsible for creative direction on the SPD TikTok channel and YouTube, 
+        overseeing content management, client and sponsor briefing, and budget control for 
+        production. Also involved in content filming, editing, prop preparation, and team 
+        coordination to ensure smooth workflow and resolve any operational issues.</p>
         <br>
-     
+        <h5>Additional responsibilities</h5>
+        <p>Actor.</p>
+        <p>Driver.</p>
+        <p>Identifies the most suitable locations for filming and coordinates with clients 
+            and sponsors on project details.</p>
+        <p>Secures sponsorships and coordinates with brand partners for all activities featured 
+            in the videos.</p>
+        <p>Recruits extra actors needed for scene participation.</p>
+        <p> Ensures that the outfits of all participants in each video align with the theme of the clip 
+	and the sponsor's branding.</p>
     <br>
-    <h4>Assumption College , Bangkok | 2005 - 2017</h4>       
+     
 </div>
         </section>
     </div>
